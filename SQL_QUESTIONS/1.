@@ -1,0 +1,6 @@
+"""Find all posts which were reacted to with a heart"""
+SELECT * 
+FROM facebook_posts
+JOIN facebook_reactions 
+ON facebook_posts.post_id = facebook_reactions.post_id
+WHERE facebook_reactions.reaction = 'heart';
