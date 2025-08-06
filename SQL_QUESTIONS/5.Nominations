@@ -1,0 +1,3 @@
+"""
+Count the number of movies for which Abigail Breslin was nominated for an Oscar."""
+select COUNT(distinct movie) from oscar_nominees WHERE nominee='Abigail Breslin';
